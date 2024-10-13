@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(0.25turn, #ff9a9e, #d6cbd7, #e09ef4);
+}
+
+.container{
+    padding: 5px 20px;
+}
+.container-title{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container-title h1{
+    color: cadetblue;
+    text-decoration: underline solid pink;
+}
+
+.container-title p{
+    width: 80%;
+}
+
+.container-content{
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.input-form{
+    width: 50%;
+    margin: 10px;
+    padding: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    justify-content: center;
+}
+
+.form{
+    margin: 15px 10px;
+    width: 70%;
+    justify-self: center;
+}
+
+.display-tile {
+    width: 50%;
+    margin: 10px;
+    padding: 3px;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensure fixed layout for equal column width */
+}
+
+thead {
+    background-color: #f1f1f1;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1;
+    z-index: 1; /* Ensure the header stays above the scrolling content */
+}
+
+tbody {
+    display: block;
+    overflow-y: auto;
+    max-height: 250px; /* Height of the scrolling area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc;
+}
+
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    word-wrap: break-word; /* Allow long words (e.g., emails) to wrap */
+    overflow-x: visible; /* Hide overflow if content exceeds the cell width */
+    text-overflow: ellipsis; /* Show ellipsis for overflowing text */
+}
